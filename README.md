@@ -11,5 +11,7 @@ pip install flask-sqlalchemy
 pip install flask-bcrypt
 pip install flask-login
 pip install Pillow
+pip install flask-email
+pip install Flask-Mail
 
 Run with>> python run.py
