@@ -1,0 +1,104 @@
+body {
+  background-color: #f6f9fa;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-header {
+  background-color: var(--primary-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-item a {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+.card {
+  background-color: #ffffff;
+  border-color: #dee2e6;
+}
+
+.card-title a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.bg-card {
+    background-color: #343a40; /* Navbar arka plan rengi */
+    color: #ffffff; /* Metin rengi beyaz */
+}
+
+.btn-custom {
+    background-color: #28a745; /* Buton arka plan rengi */
+    color: #ffffff; /* Metin rengi beyaz */
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #218838; /* Buton arka plan rengi daha koyu */
+    color: #ffffff; /* Metin rengi beyaz */
+}
+
+
+.article-metadata {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.article-content {
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.post-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.content-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.article-img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+  color: var(--primary-color);
+}
+
+.col-md-4 {
+  display: flex;
+}
