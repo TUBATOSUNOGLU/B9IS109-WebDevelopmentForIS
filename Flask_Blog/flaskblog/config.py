@@ -9,3 +9,7 @@ class Config:
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get('EMAIL_USER')
     MAIL_PASSWORD = os.environ.get('EMAIL_PASS')
+    GOOGLE_CLIENT_ID = 'your_client_id'
+    GOOGLE_CLIENT_SECRET = 'your_secret_key'
+    GOOGLE_OAUTH_REDIRECT_URL = "callback_redirect_url"
+    # for_example = http://localhost:5000/auth/google/callback

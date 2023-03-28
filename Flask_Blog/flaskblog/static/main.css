@@ -78,3 +78,19 @@ body {
   .account-heading {
     font-size: 2.5rem;
   }
+
+  .calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #dee2e6;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.calendar th {
+  background-color: #f8f9fa;
+}
