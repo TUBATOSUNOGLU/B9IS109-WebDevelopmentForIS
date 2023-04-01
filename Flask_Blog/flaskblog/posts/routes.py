@@ -1,7 +1,7 @@
 import os
 
-from flask import (Blueprint, abort, flash, redirect, render_template, request,
-                   url_for, current_app)
+from flask import (Blueprint, abort, current_app, flash, redirect,
+                   render_template, request, url_for)
 from flask_login import current_user, login_required
 from flaskblog import db
 from flaskblog.models import Post

@@ -1,100 +1,42 @@
-{% extends "layout.html" %}
-
-{% block content %}
-  <div class="container my-5">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-6">
-        <div class="card w-100">
-          <div class="card-header text-center">
-            <h3 class="mb-0">Join Today</h3>
-          </div>
-          <div class="card-body">
-            <form method="POST" action="">
-              {{ form.hidden_tag() }}
-              <fieldset>
-                {% for field in form %}
-                  {% if field.type != 'HiddenField' and field.type != 'SubmitField' %}
-                    <div class="form-group">
-                      {{ field.label(class="form-control-label") }}
-                      {% if field.errors %}
-                        {{ field(class="form-control is-invalid") }}
-                        <div class="invalid-feedback">
-                          {% for error in field.errors %}
-                            <span>{{ error }}</span>
-                          {% endfor %}
-                        </div>
-                      {% else %}
-                        {{ field(class="form-control") }}
-                      {% endif %}
-                    </div>
-                  {% endif %}
-                {% endfor %}
-              </fieldset>
-              <div class="form-group">
-                {{ form.submit(class="btn btn-info btn-block") }}
+{% extends "layout.html" %} {% block content %}
+<div class="container my-5 outline-none">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-6">
+      <div class="card w-100">
+        <div class="card-header text-center">
+          <h3 class="mt-2">Join Us Today</h3>
+        </div>
+        <div class="card-body mt-1">
+          <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset>
+              {% for field in form %} {% if field.type != 'HiddenField' and
+              field.type != 'SubmitField' %}
+              <div class="form-group mt-2">
+                {{ field.label(class="form-control-label") }} {% if field.errors
+                %} {{ field(class="form-control is-invalid") }}
+                <div class="invalid-feedback mt-3">
+                  {% for error in field.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %} {{ field(class="form-control") }} {% endif %}
               </div>
-            </form>
-          </div>
-          <div class="card-footer text-muted text-center">
-            <small>
-              Already have an account? <a href="{{ url_for('users.login') }}">Sign In</a>
-            </small>
-          </div>
+              {% endif %} {% endfor %}
+            </fieldset>
+            <div class="form-group mt-2 d-flex justify-content-center">
+              {{ form.submit(class="btn btn-primary btn-block") }}
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-muted text-center">
+          <small>
+            Already have an account?
+            <a href="{{ url_for('users.login') }}">Sign In</a>
+          </small>
         </div>
       </div>
     </div>
   </div>
-{% endblock content %}
-
-{% block styles %}
-  <style>
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card {
-      margin-bottom: 2rem;
-    }
-
-    .card-header {
-      background-color: #f8f9fa;
-      font-size: 1.25rem;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .card-body {
-      padding: 2rem;
-    }
-
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
-
-    label {
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="email"] {
-      font-size: 1.1rem;
-      padding: 0.75rem;
-    }
-
-    button[type="submit"] {
-      font-size: 1.1rem;
-      font-weight: bold;
-      padding: 0.75rem;
-    }
-a
-    .card-footer {
-      background-color: #f8f9fa;
-      font-size: 0.9rem;
-      font-weight: bold;
-    }
-  </style>
-{% endblock styles %}
+</div>
+{% endblock content %} {% block styles %} {% endblock styles %}

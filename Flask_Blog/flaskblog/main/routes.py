@@ -1,6 +1,7 @@
+from datetime import datetime
+
 from flask import Blueprint, render_template, request
 from flaskblog.models import Post
-from datetime import datetime
 
 main = Blueprint('main', __name__)
 

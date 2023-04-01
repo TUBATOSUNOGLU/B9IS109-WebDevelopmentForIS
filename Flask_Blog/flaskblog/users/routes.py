@@ -1,4 +1,5 @@
 from flask import Blueprint, flash, redirect, render_template, request, url_for
+from flask_dance.contrib.google import google, make_google_blueprint
 from flask_login import current_user, login_required, login_user, logout_user
 from flaskblog import bcrypt, db
 from flaskblog.models import Post, User
@@ -6,7 +7,6 @@ from flaskblog.users.forms import (Loginform, RegistrationForm,
                                    RequestResetForm, ResetPasswordForm,
                                    UpdateAccountform)
 from flaskblog.users.utils import save_picture, send_reset_email
-from flask_dance.contrib.google import make_google_blueprint, google
 
 users = Blueprint('users', __name__)
 
