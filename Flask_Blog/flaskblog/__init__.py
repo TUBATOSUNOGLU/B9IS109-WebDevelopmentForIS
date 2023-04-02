@@ -1,13 +1,14 @@
 from dotenv import load_dotenv
+
 load_dotenv()
 
 from flask import Flask
 from flask_bcrypt import Bcrypt
+from flask_dance.contrib.google import make_google_blueprint
 from flask_login import LoginManager
 from flask_mail import Mail
 from flask_sqlalchemy import SQLAlchemy
 from flaskblog.config import Config
-from flask_dance.contrib.google import make_google_blueprint
 
 db = SQLAlchemy()
 bcrypt = Bcrypt()

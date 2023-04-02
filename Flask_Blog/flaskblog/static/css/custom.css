@@ -167,7 +167,7 @@ i {
 
 div#carousel {
   perspective: 1200px;
-  background: #100000;
+  background: #d6d3d3;
   padding-top: 10%;
   font-size: 0;
   margin-bottom: 3rem;
@@ -175,12 +175,12 @@ div#carousel {
 }
 figure#spinner {
   transform-style: preserve-3d;
-  height: 300px;
+  height: 400px;
   transform-origin: 50% 50% -500px;
   transition: 1s;
 }
 figure#spinner img {
-  width: 40%;
+  width: 70%;
   max-width: 425px;
   position: absolute;
   left: 30%;
