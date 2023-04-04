@@ -3,9 +3,9 @@ Babel==2.11.0
 bcrypt==4.0.1
 blinker==1.5
 cachetools==4.2.4
-certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_477u68wvzm/croot/certifi_1671487773341/work/certifi
+
 charset-normalizer==2.0.12
-click @ file:///opt/concourse/worker/volumes/live/2d66025a-4d79-47c4-43be-6220928b6c82/volume/click_1646056610594/work
+itsdangerous==2.1.2
 colorama==0.4.5
 dataclasses==0.6
 distlib==0.3.6
@@ -36,7 +36,6 @@ httplib2==0.22.0
 idna==3.4
 importlib-metadata==4.8.3
 importlib-resources==5.4.0
-itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
 Jinja2==3.0.3
 Mako==1.1.6
 MarkupSafe==2.0.1
@@ -64,4 +63,3 @@ virtualenv==20.21.0
 Werkzeug==2.0.3
 WTForms==3.0.0
 zipp==3.6.0
-lxml==3.8.0

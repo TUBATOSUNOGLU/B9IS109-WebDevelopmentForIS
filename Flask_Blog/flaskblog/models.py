@@ -3,7 +3,7 @@ from datetime import datetime
 from flask import current_app
 from flask_login import UserMixin
 from flaskblog import db, login_manager
-from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+from itsdangerous.url_safe import URLSafeTimedSerializer as Serializer
 
 
 @login_manager.user_loader
