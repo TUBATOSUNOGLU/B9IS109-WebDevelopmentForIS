@@ -12,4 +12,4 @@ class Config:
     GOOGLE_CLIENT_ID = '909545849269-tkivcs37a4j3hqkkkj4qgm3vefr39u7c.apps.googleusercontent.com'
     GOOGLE_CLIENT_SECRET = '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'
     GOOGLE_OAUTH_REDIRECT_URL = "callback_redirect_url"
-    # for_example = http://localhost:5000/auth/google/callback
+    # for_example= http://localhost:5000/auth/google/callback
