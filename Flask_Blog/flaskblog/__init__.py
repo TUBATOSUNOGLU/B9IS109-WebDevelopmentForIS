@@ -29,8 +29,8 @@ def create_app(config_class=Config):
 
     # Google Blueprint'ını oluştur
     google_bp = make_google_blueprint(
-        client_id="655299075419-u3kjofupjh2n8oe3cqh341k89g86q9j6.apps.googleusercontent.com",
-        client_secret="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",
+        client_id="909545849269-tkivcs37a4j3hqkkkj4qgm3vefr39u7c.apps.googleusercontent.com",
+        client_secret="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",
         scope=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"],
         redirect_to="http://localhost:5000/auth/google/callback"
     )
